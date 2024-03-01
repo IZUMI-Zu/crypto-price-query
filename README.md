@@ -23,7 +23,14 @@ getCoinPrices(['bitcoin', 'ethereum'], 'usd')
   .catch(error => console.error(error));
 ```
 
-This will return an object with the coin names as keys and their corresponding prices as values.
+This will return an object with the coin names as keys and their corresponding prices as values like
+
+```js
+{
+  bitcoin: { usd: 62064 },
+  ethereum: { usd: 3411.79 }
+}
+```
 
 ## API
 
