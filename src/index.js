@@ -17,5 +17,20 @@ const getCoinPrices = async (coins, currency = 'usd') => {
     }
 };
 
+const getHistoricalData = async (coin, currency = 'usd', days = 30) => {
+    /// TODO
+    const to = Date.now();
+    const from = to - days * 24 * 60 * 60 * 1000;
 
-module.exports = getCoinPrices;
+    try {
+        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${coin}/market_chart/range?vs_currency=${currency}&from=${from}&to=${to}`);
+        return response.data;
+    } catch (error) {
+        throw new Error('An error occurred while fetching the historical data.');
+    }
+};
+
+module.exports = {
+    getCoinPrices,
+    getHistoricalData
+};
