@@ -35,30 +35,37 @@ This will return an object with the coin names as keys and their corresponding p
 
 ## API
 
-`getCoinPrices(coins, currency)`
+### `getCoinPrices(coins, currency)`
 
 coins: An array of strings, containing the names of the cryptocurrencies you want to query.
+
 currency: A string representing the currency you want to query against. Defaults to 'usd'.
+
 Error Handling
 If an error occurs during the query, the getCoinPrices function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
 
-`getCoinRank(coinId)`
+### `getCoinRank(coinId)`
 
 coinId: A string, containing the names of the cryptocurrency you want to query.
+
 Error Handling
 If an error occurs during the query, the getCoinPrices function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
 
-`getMarketCap(coinId, currency)`
+### `getMarketCap(coinId, currency)`
 
 coinId: A string, containing the names of the cryptocurrency you want to query.
+
 currency: A string representing the currency you want to query against. Defaults to 'usd'.
+
 Error Handling
 If an error occurs during the query, the getMarketCap function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
 
-`getVolume(coinId, currency)`
+### `getVolume(coinId, currency)`
 
 coinId: A string, containing the names of the cryptocurrency you want to query.
+
 currency: A string representing the currency you want to query against. Defaults to 'usd'.
+
 Error Handling
 If an error occurs during the query, the getVolume function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
 
