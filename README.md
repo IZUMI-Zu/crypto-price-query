@@ -14,7 +14,7 @@ npm install crypto-price-query
 
 First, you need to import crypto-price-query:
 
-const getCoinPrices = require('crypto-price-query');
+`const getCoinPrices = require('crypto-price-query');`
 Then, you can use the getCoinPrices function to query the price of one or more cryptocurrencies:
 
 ```js
@@ -40,6 +40,26 @@ coins: An array of strings, containing the names of the cryptocurrencies you wan
 currency: A string representing the currency you want to query against. Defaults to 'usd'.
 Error Handling
 If an error occurs during the query, the getCoinPrices function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
+
+`getCoinRank(coinId)`
+
+coinId: A string, containing the names of the cryptocurrency you want to query.
+Error Handling
+If an error occurs during the query, the getCoinPrices function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
+
+`getMarketCap(coinId, currency)`
+
+coinId: A string, containing the names of the cryptocurrency you want to query.
+currency: A string representing the currency you want to query against. Defaults to 'usd'.
+Error Handling
+If an error occurs during the query, the getMarketCap function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
+
+`getVolume(coinId, currency)`
+
+coinId: A string, containing the names of the cryptocurrency you want to query.
+currency: A string representing the currency you want to query against. Defaults to 'usd'.
+Error Handling
+If an error occurs during the query, the getVolume function will throw an exception. You should use a try...catch statement or the catch method of the Promise to handle this exception.
 
 ## License
 

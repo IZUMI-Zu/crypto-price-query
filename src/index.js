@@ -1,8 +1,11 @@
 const getCoinPrices = require('./getCoinPrices');
-const CryptoPriceAlert = require('./CryptoPriceAlert');
-
+const getCoinRank = require('./getCoinRank');
+const getVolume = require('./getVolume');
+const getMarketCap = require('./getMarketCap')
 
 module.exports = {
     getCoinPrices,
-    CryptoPriceAlert
+    getCoinRank,
+    getVolume,
+    getMarketCap,
 };
