@@ -15,6 +15,7 @@ npm install crypto-price-query
 First, you need to import crypto-price-query:
 
 `const getCoinPrices = require('crypto-price-query');`
+
 Then, you can use the getCoinPrices function to query the price of one or more cryptocurrencies:
 
 ```js
