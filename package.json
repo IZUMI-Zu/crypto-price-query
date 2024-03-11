@@ -1,12 +1,11 @@
 {
   "name": "crypto-price-query",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Tools with crypto coin price",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -15,5 +14,13 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:IZUMI-Zu/crypto-price-query.git"
+  },
+  "keywords": [
+    "coin",
+    "Currency",
+    "Crypto-Price"
+  ],
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
